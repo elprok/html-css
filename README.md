@@ -1,2 +1,6 @@
 # html-css
-Only HTML and CSS projects
+This project is use:
+
+BEM metodology
+Flexbox layout
+Page responsive 
