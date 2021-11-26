@@ -1,96 +1,128 @@
 body {
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     max-width: 1440px;
-
-    background-color: hsl(0, 0%, 95%);
+    background-color: #F2F2F2;
     }
 
 .wrapper {
     min-height: 100%;
-    margin: 50px 100px;
-
-    }
-
-.content {
-
+    display: flex;
+    justify-content: center;
     }
 
 .container {
+    padding: 171px 0;
     display: flex;
     flex-direction: row;
-    min-height: 200px;
-    max-width: 500px;
+    max-width: 950px;
     }
 
 .card__row {
-    padding: 25px;
-    max-height: 600px;
-    min-height: 100%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.333%;
     }
 
-.card__row h2 {
-    flex: 1 1 auto;
-    padding: 20px 0;
-    color: hsl(0, 0%, 95%);
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-weight: 700;
-    }
-
-.card__row p {
-    color: hsla(0, 0%, 100%, 0.75);
-    font-weight: 300;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 8px;
-    line-height: 13px;
-    }
-
-.card__row img{
-    max-width: 30px;
-    max-height: 30px;
-    }
-
-.card1 {
-    background-color: hsl(31, 77%, 52%);
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    }
-
-.card1 button{
-    color: hsl(31, 77%, 52%);
+.card__row img {
+    max-width: 64px;
+    max-height: 40px;
     }
 
 .card__title {
+    padding: 35px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    font-size: 40px;
     }
 
 .card__text {
+    flex: 1 1 auto;
+    padding: 25px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
     }
 
 .card__button {
     background-color: hsl(0, 0%, 95%);
-    margin: 30px 0 0 0;
+    margin: 83px 0 0 0;
     font-family: 'Lexend Deca', sans-serif;
-    padding: 6px 12px;
+    width: 146px;
+    height: 48px;
     border-radius: 20px;
-    font-size: 6px;
+    font-size: 15px;
+    transition: .5s;
     }
 
+.card__button:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    }
 
+.card1 {
+    background-color: #E28625;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    }
+
+.card1 .card__button {
+    color: #E28625;
+    }
+
+.card1 .card__button:hover {
+    background-color: #E28625;
+    }
 
 .card2 {
-    background-color: hsl(184, 100%, 22%);
+    background-color: #006971;
     }
 
-.card2 button{
-    color: hsl(184, 100%, 22%);
+.card2 .card__button {
+    color: #006971;
     }
 
-.card__row.card3 {
-    background-color: hsl(179, 100%, 13%);
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+.card2 .card__button:hover {
+    background-color: #006971;
     }
 
-.card3 button{
-    color: hsl(179, 100%, 13%);
+.card3 {
+    background-color: #004140;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    }
+
+.card3 .card__button {
+    color: #004140;
+    }
+
+.card3 .card__button:hover {
+    background-color: #004140;
+    }
+
+@media (max-width: 327px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        }
+
+    .card__button {
+        margin: 13px 0 0 0;
+        }
+
+    .card1 {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: unset;
+        }
+
+    .card3 {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: unset;
+        }
+
     }
