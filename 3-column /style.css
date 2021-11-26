@@ -30,7 +30,7 @@ body {
     }
 
 .card__title {
-    padding: 35px 0;
+    padding: 35px 0 0 0;
     font-family: 'Big Shoulders Display', cursive;
     color: #F2F2F2;
     text-transform: uppercase;
@@ -109,8 +109,12 @@ body {
         padding: 5px;
         }
 
+    .card__text{
+        padding: 25px 0 0 0;
+        }
+
     .card__button {
-        margin: 13px 0 0 0;
+        margin: 25px 0 0 0;
         }
 
     .card1 {
