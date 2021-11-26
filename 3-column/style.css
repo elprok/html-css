@@ -68,7 +68,7 @@ body {
     border-top-left-radius: 8px;
     }
 
-.card1 .card__button {
+.card1, .card__button {
     color: #E28625;
     }
 
@@ -80,7 +80,7 @@ body {
     background-color: #006971;
     }
 
-.card2 .card__button {
+.card2, .card__button {
     color: #006971;
     }
 
@@ -94,7 +94,7 @@ body {
     border-top-right-radius: 8px;
     }
 
-.card3 .card__button {
+.card3, .card__button {
     color: #004140;
     }
 
@@ -113,9 +113,7 @@ body {
         padding: 25px 0 0 0;
         }
 
-    .card__button {
-        margin: 25px 0 0 0;
-        }
+
 
     .card1 {
         border-top-right-radius: 8px;
