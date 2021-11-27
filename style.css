@@ -1,0 +1,108 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 1240px;
+    background: url("img/pexels-eberhard-grossgasteiger-629161.jpg") no-repeat;
+    background-size: cover;
+
+    }
+
+
+.wrapper {
+    min-height: 100%;
+    background-color: rgba(231, 225, 225, 0.22);
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
+    grid-template-areas:
+  "header"
+  "main"
+  "footer";
+    }
+
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    }
+
+.logo{
+    padding: 0 0 0 10px;
+    }
+
+.logo img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    }
+
+.header__title {
+    grid-column: 2/3;
+    justify-self: center;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 7px;
+    color: rgb(39, 54, 73);
+    width: 300px;
+    }
+
+.main__grid {
+    grid-area: main;
+    padding: 30px 0 0 30px;
+    background-color: rgba(4, 56, 55, 0.17);
+    }
+
+.main__column {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+
+.section {
+    background-color: rgba(0, 65, 64, 0.36);
+    width: 300px;
+    min-height: 100%;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    font-weight: 600;
+    }
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+    }
+
+.section__title {
+    padding: 30px 0 0 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 18px;
+    letter-spacing: 1px;
+    }
+
+.section__btn{
+    color: rgba(255, 255, 255, 0.66);
+    background-color: #004140;
+    border-radius: 10px;
+    padding: 9px;
+    line-height: 80px;
+    transition: .5s;
+    font-weight: 400;
+    letter-spacing: 2px;
+    }
+
+.section__btn:hover{
+    background-color: rgba(255, 255, 255, 0.61);
+    color: #004140;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.66);
+    padding: 11px;
+    }
+
+.section__text {
+    }
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(25, 33, 44, 0.22);
+    }
