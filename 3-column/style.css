@@ -57,13 +57,10 @@ body {
     transition: .5s;
     }
 
-.card__button:hover {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    }
-
 .orange-btn:hover, .cyan-btn:hover, .darkcyan-btn:hover {
     background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     }
 
 .card1 {
@@ -117,5 +114,4 @@ body {
         border-bottom-left-radius: 8px;
         border-top-right-radius: unset;
         }
-
     }
