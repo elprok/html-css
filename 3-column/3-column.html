@@ -10,29 +10,37 @@
 </head>
 <body>
 <div class="wrapper">
+    <h1 class="sr-only">3-column preview card component</h1>
     <div class="container">
       <div class="card__row card1">
-        <img src="images/icon-sedans.svg" alt="icon-sedan">
+        <img src="images/icon-sedans.svg" alt="" aria-hidden="true">
         <h2 class="card__title">Sedans</h2>
         <p class="card__text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
   or on your next road trip.</p>
-        <button class="card__button orange-btn">Learn More</button>
+        <a href class="card__link orange-btn">Learn More</a>
       </div>
       <div class="card__row card2">
-        <img src="images/icon-suvs.svg" alt="icon-suv">
+        <img src="images/icon-suvs.svg" alt="" aria-hidden="true">
         <h2 class="card__title">SUVs</h2>
         <p class="card__text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
   and off-road adventures. </p>
-        <button class="card__button cyan-btn">Learn More</button>
+        <a href class="card__link cyan-btn">Learn More</a>
       </div>
       <div class="card__row card3">
-        <img src="images/icon-luxury.svg" alt="icon-luxury-car">
+        <img src="images/icon-luxury.svg" alt="" aria-hidden="true">
         <h2 class="card__title">Luxury</h2>
         <p class="card__text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
   rental and arrive in style.</p>
-        <button class="card__button darkcyan-btn">Learn More</button>
+        <a href="" class="card__link darkcyan-btn">Learn More</a>
       </div>
     </div>
+      <footer class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by
+      <a href="https://github.com/elprok" target="_blank" rel="noopener">Helen Koliushko</a>.
+    </footer>
 </div>
+
 </body>
 </html>
