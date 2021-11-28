@@ -17,13 +17,14 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 950px;
+    flex: 0 0 auto;
     }
 
 .card__row {
     padding: 48px;
     display: flex;
     flex-direction: column;
-    flex: 0 0 33.333%;
+    flex: 0 1 33.333%;
     }
 
 .card__row img {
@@ -97,10 +98,17 @@ body {
     color: #004140;
     }
 
-footer{
-text-align: center;
-    padding: 1rem;
-    font-size: 0.875rem;
+.footer{
+    text-align: center;
+    padding: 20px;
+    }
+
+.footer a{
+    color: #006971;
+    }
+
+.footer a:hover{
+    color: #E28625;
     }
 
 
@@ -110,6 +118,7 @@ text-align: center;
         flex-direction: column;
         flex: 0 0 auto;
         padding: 5px;
+        max-width: 350px;
         }
 
     .card__text{
